@@ -55,7 +55,7 @@ export default function Navbar() {
         <nav className="hidden lg:flex space-x-8 font-medium relative">
           {/* Builder */}
           <div className="group relative">
-            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition">
+            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition font-semibold">
               Builder
               <IoChevronDown
                 className="transition-transform duration-300 group-hover:rotate-180"
@@ -68,7 +68,7 @@ export default function Navbar() {
               <div className="grid grid-cols-1 gap-4">
                 <a
                   href="#"
-                  className="relative pl-10 block hover:bg-slate-50 p-3 mb-2 rounded-lg transition"
+                  className="relative pl-12 block hover:bg-slate-50 p-3 mb-2 rounded-lg transition"
                 >
                   <IconWand
                     size={24}
@@ -83,7 +83,7 @@ export default function Navbar() {
 
 
 
-                <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                   <IconWritingSign size={24} stroke={1.5} className="absolute left-3 top-4 text-green-400" />
                   <h4 className="font-semibold mb-1 text-slate-800">CV Maker</h4>
                   <p className="text-xs text-gray-600 leading-snug">
@@ -98,7 +98,7 @@ export default function Navbar() {
 
           {/* Resume */}
           <div className="group relative">
-            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition">
+            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition font-semibold">
               Resume
               <IoChevronDown
                 className="transition-transform duration-300 group-hover:rotate-180"
@@ -113,7 +113,7 @@ export default function Navbar() {
                 <div>
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconReport
                       size={24}
@@ -130,7 +130,7 @@ export default function Navbar() {
 
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconMedal
                       size={24}
@@ -147,7 +147,7 @@ export default function Navbar() {
 
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconPencilQuestion
                       size={24}
@@ -167,7 +167,7 @@ export default function Navbar() {
                 <div>
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconFileDescription
                       size={24}
@@ -184,7 +184,7 @@ export default function Navbar() {
 
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconWand
                       size={24}
@@ -204,7 +204,7 @@ export default function Navbar() {
                 <div>
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconSettingsCog
                       size={24}
@@ -221,7 +221,7 @@ export default function Navbar() {
 
                   <a
                     href="#"
-                    className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
+                    className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition"
                   >
                     <IconZoomExclamation
                       size={24}
@@ -261,7 +261,7 @@ export default function Navbar() {
 
           {/* CV */}
           <div className="group relative">
-            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition">
+            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition font-semibold">
               CV
               <IoChevronDown
                 className="transition-transform duration-300 group-hover:rotate-180"
@@ -274,7 +274,7 @@ export default function Navbar() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Column 1 (was 2nd in Resume) */}
                 <div>
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconWritingSign size={24} stroke={1.5} className="absolute left-3 top-4 text-green-400" />
                     <h4 className="font-semibold mb-1 text-slate-800">CV Maker</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -282,7 +282,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconMedal2 size={24} stroke={1.5} className="absolute left-3 top-4 text-cyan-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">CV Examples</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -293,7 +293,7 @@ export default function Navbar() {
 
                 {/* Column 2  */}
                 <div>
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconChecklist size={24} stroke={1.5} className="absolute left-3 top-4 text-purple-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">CV Templates</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -301,7 +301,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconPencilQuestion size={24} stroke={1.5} className="absolute left-3 top-4 text-orange-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">How to Write a CV</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -334,7 +334,7 @@ export default function Navbar() {
 
           {/* Advice */}
           <div className="group relative">
-            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition">
+            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition font-semibold">
               Advice
               <IoChevronDown
                 className="transition-transform duration-300 group-hover:rotate-180"
@@ -346,7 +346,7 @@ export default function Navbar() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Column 1 */}
                 <div>
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconReport size={24} stroke={1.5} className="absolute left-3 top-4 text-indigo-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Resumes</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -354,7 +354,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconWritingSign size={24} stroke={1.5} className="absolute left-3 top-4 text-green-500" />
                     <h4 className="font-semibold mb-1 text-slate-800">Cover Letters</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -365,7 +365,7 @@ export default function Navbar() {
 
                 {/* Column 2 */}
                 <div>
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconChecklist size={24} stroke={1.5} className="absolute left-3 top-4 text-cyan-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Job Search</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -373,7 +373,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconMedal2 size={24} stroke={1.5} className="absolute left-3 top-4 text-yellow-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Career Advice</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -405,7 +405,7 @@ export default function Navbar() {
 
           {/* Resources */}
           <div className="group relative">
-            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition">
+            <button className="flex items-center gap-1 px-2 py-4 hover:text-indigo-600 transition font-semibold">
               Resources
               <IoChevronDown
                 className="transition-transform duration-300 group-hover:rotate-180"
@@ -418,7 +418,7 @@ export default function Navbar() {
 
                 {/* Column 1 */}
                 <div>
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconPhoneCall size={24} stroke={1.5} className="absolute left-3 top-4 text-indigo-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Contact Us</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -426,7 +426,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconNews size={24} stroke={1.5} className="absolute left-3 top-4 text-purple-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Editorial Guidelines</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -434,7 +434,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconSpeakerphone size={24} stroke={1.5} className="absolute left-3 top-4 text-yellow-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Press</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -445,7 +445,7 @@ export default function Navbar() {
 
                 {/* Column 2 */}
                 <div>
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconMessage2 size={24} stroke={1.5} className="absolute left-3 top-4 text-cyan-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">Customer Reviews</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -453,7 +453,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconPencilQuestion size={24} stroke={1.5} className="absolute left-3 top-4 text-green-600" />
                     <h4 className="font-semibold mb-1 text-slate-800">FAQ</h4>
                     <p className="text-xs text-gray-600 leading-snug">
@@ -461,7 +461,7 @@ export default function Navbar() {
                     </p>
                   </a>
 
-                  <a href="#" className="relative pl-10 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
+                  <a href="#" className="relative pl-12 block hover:bg-slate-50 p-3 mb-5 rounded-lg transition">
                     <IconCoin size={24} stroke={1.5} className="absolute left-3 top-4 text-orange-500" />
                     <h4 className="font-semibold mb-1 text-slate-800">Pricing</h4>
                     <p className="text-xs text-gray-600 leading-snug">

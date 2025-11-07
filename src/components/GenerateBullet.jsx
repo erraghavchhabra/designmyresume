@@ -13,7 +13,7 @@ export default function GenerateBullet() {
 
 
         <div className="w-full text-center mb-8">
-          <h1 className="text-4xl sm:text-4xl lg:text-4xl lg:mb-4 text-white font-bold leading-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-4xl lg:mb-4 text-white font-bold leading-tight">
             Generate Your Resume Bullet Points with AI
           </h1>
         </div>
@@ -23,7 +23,7 @@ export default function GenerateBullet() {
 
 
           <div
-            className="flex z-10 flex-col justify-center text-center lg:text-left rounded-2xl lg:basis-3/5 xl:basis-3/6 p-6"
+            className="flex z-10 flex-col justify-center text-center lg:text-left rounded-2xl lg:basis-3/5 xl:basis-3/6 p-4 lg:p-6"
             style={{
               background: "rgb(255 253 253 / 9%)",
               backdropFilter: "blur(30px)",
@@ -32,24 +32,24 @@ export default function GenerateBullet() {
               border: "1px solid rgba(255, 255, 255, 0.3)",
             }}
           >
-            <h4 className=" items-center gap-3 flex text-3xl text-white sm:text-3xl lg:text-3xl lg:mb-2"><BsMagic className="text-indigo-600" /> Let AI do the work!</h4>
-            <p className="text-white">Simplify the writing process with a single click. Enter a skill or responsibility to generate your choice of compelling bullet points.</p>
+            <h4 className=" items-center gap-3 flex text-2xl text-white sm:text-3xl lg:text-3xl lg:mb-2"><BsMagic className="text-indigo-600" /> Let AI do the work!</h4>
+            <p className="text-white text-left">Simplify the writing process with a single click. Enter a skill or responsibility to generate your choice of compelling bullet points.</p>
             <div className="relative mt-4">
               <textarea id="message" rows="7" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Try it Out! Enter Text Here..."></textarea>
               <div className="flex justify-between items-center p-2 absolute bottom-1 w-full">
                 <div className="">
-                  <p className="text-sm text-gray-100"><i>0 remaining. Magic, right? See more in our builder.</i></p>
+                  <p className="text-sm text-gray-100"><i>0 remaining.<span className="hidden lg:inline"> Magic, right? See more in our builder.</span></i></p>
                 </div>
                 <div className="text-left">
-                  <button type="button" class="text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 font-medium rounded-full text-sm px-3 py-1 text-center mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-900">Create Resume</button>
+                  <button type="button" class="text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-4 focus:ring-indigo-300 font-medium rounded-full text-sm px-3 py-1 text-center mb-0 dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-900">Create Resume</button>
                 </div>
               </div>
             </div>
           </div>
 
 
-          <div className="px-6 mt-8 lg:mt-0 lg:basis-3/6 relative">
-            <h4 className=" text-left text-1xl text-white lg:text-[20px] lg:mb-8">Not sure what to write? Try one of these examples.</h4>
+          <div className="px-3 lg:px-6 mt-8 lg:mt-0 lg:basis-3/6 relative">
+            <h4 className=" text-left text-1xl text-white lg:text-[20px] mb-4 lg:mb-8">Not sure what to write? Try one of these examples.</h4>
             <div className="suggestion-box bg-[#e4eaff] p-4 rounded-lg min-h-[80px] mb-3" >
               <div className="flex items-center justify-between gap-2">
                 <p className="text-gray-100">

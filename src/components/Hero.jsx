@@ -16,7 +16,7 @@ const Star = () => (
 export default function Hero() {
   return (
     <section
-      className="relative pt-24 text-center bg-cover bg-center bg-no-repeat min-h-[100vh] flex flex-col justify-center"
+      className="relative pt-14 lg:pt-24 text-center bg-cover bg-center bg-no-repeat min-h-[100vh] flex flex-col justify-center"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
       <div className="absolute inset-0 bg-white/90"></div>
@@ -24,12 +24,12 @@ export default function Hero() {
       <div className="max-w-7xl w-full flex flex-col lg:flex-row justify-between items-center p-6 mx-auto sm:py-12 lg:py-18">
         {/* LEFT TEXT SECTION */}
         <div className="flex z-10 flex-col justify-center text-center lg:text-left rounded-sm lg:basis-3/5 xl:basis-3/6">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-2 lg:mb-4 leading-tight">
             AI-Powered Resume Builder{" "}
             <span className="text-indigo-600">– Free & Easy</span>
           </h1>
 
-          <p className="mt-6 mb-8 text-lg w-[70%] sm:mb-12 text-gray-700">
+          <p className="mt-6 mb-8 text-lg w-[100%] lg:w-[70%] sm:mb-12 text-gray-700">
             Land your next job with our free AI resume builder. Choose from
             recruiter-approved templates and add skills in one click — all from
             your computer or phone.
@@ -66,16 +66,9 @@ export default function Hero() {
         </div>
 
         {/* RIGHT IMAGE SECTION */}
-        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 lg:basis-3/6 relative">
+        <div className="flex items-center justify-center p-2 lg:p-6 mt-8 lg:mt-0 lg:basis-3/6 relative">
           <div className="hero-img relative w-full h-[400px] lg:h-[500px] flex items-center justify-center">
-            <img src={ResumeImg} alt="Resume Builder" className="resume-img" />
-            <img src={HeroLines} alt="Resume Builder" className="hero-lines" />
-            <img
-              src={UserSupportImg}
-              alt="Support"
-              className="user-support-img"
-            />
-            <div className="text-box">
+             <div className="text-box">
               <div className="flex items-start mb-3">
                 <h3 className="text-indigo-600 text-3xl sm:text-3xl lg:text-3xl">
                   Let AI do the work!
@@ -99,6 +92,14 @@ export default function Hero() {
                 content for your work experience section.
               </p>
             </div>
+            <img src={ResumeImg} alt="Resume Builder" className="resume-img" />
+            <img src={HeroLines} alt="Resume Builder" className="hero-lines" />
+            <img
+              src={UserSupportImg}
+              alt="Support"
+              className="user-support-img"
+            />
+          
           </div>
         </div>
       </div>

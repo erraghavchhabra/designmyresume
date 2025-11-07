@@ -104,10 +104,10 @@ const FeatureCard = ({ icon: Icon, title, description, imagePosition, image, ind
 
 const FeaturesSection = () => {
   return (
-    <section className="relative py-20 px-4 md:px-8 bg-background">
+    <section className="relative py-10 lg:py-20 px-4 md:px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 space-y-4 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl text-indigo-600">
+          <h2 className="text-3xl md:text-5xl text-indigo-600">
             Why Use Our Online Resume Builder
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

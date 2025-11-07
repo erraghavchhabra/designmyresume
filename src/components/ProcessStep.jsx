@@ -11,7 +11,7 @@ export const ProcessStep = () => {
         <div>
          
         </div>
-        <h2 className="mb-6  text-3xl font-bold leading-none tracking-tight text-indigo-600 sm:text-4xl md:mx-auto">
+        <h2 className="mb-6  text-3xl font-bold leading-none text-center text-indigo-600 sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
@@ -138,7 +138,7 @@ export const ProcessStep = () => {
       </div>
     </div>
 
-     <div className="w-full text-center mt-14">
+     <div className="w-full text-center mt-8 lg:mt-14">
          <a
         href="#"
         className="px-8 py-3 text-lg font-semibold rounded bg-indigo-600 text-white hover:bg-indigo-700 transition"

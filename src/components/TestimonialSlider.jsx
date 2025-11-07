@@ -50,29 +50,33 @@ const TestimonialSlider = () => {
     <section className="bg-gradient-to-b from-purple-50 to-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* CENTER HEADING */}
-        <h2 className="mb-16 text-3xl font-bold leading-none tracking-tight text-center text-indigo-600 sm:text-4xl md:mx-auto">
+        <h2 className="mb-5 lg:mb-16 text-3xl font-bold leading-none sm:line-clamp-2 text-center text-indigo-600 sm:text-4xl md:mx-auto">
           Resume Now Is Rated Highly by Job Seekers
         </h2>
 
         {/* TWO-COLUMN LAYOUT */}
         <div className="grid grid-cols-1 md:grid-cols-[20%_80%] gap-10 items-start">
           {/* LEFT — Trustpilot Section */}
-          <div className="text-center md:text-left space-y-4 p-6">
-            <h3 className="text-2xl font-bold">Excellent</h3>
+          <div className="text-center flex align-middle justify-between lg:block md:text-left space-y-4 p-6">
+          <div>
+              <h3 className="text-2xl font-bold mt-[13px] lg:mt-[0px]">Excellent</h3>
 
             <div className="flex justify-center md:justify-start space-x-1 mb-2">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} />
               ))}
             </div>
+            </div>
 
-            <p className="text-sm text-gray-600">
+           <div class="mt-0">
+             <p className="text-sm text-gray-600">
               Based on <span className="font-semibold">14,874 reviews</span>
             </p>
 
             <div className="flex justify-center md:justify-start mt-2">
               <img src={TrustImg} alt="Trustpilot" className="w-28" />
             </div>
+           </div>
           </div>
 
           {/* RIGHT — Swiper Slider */}

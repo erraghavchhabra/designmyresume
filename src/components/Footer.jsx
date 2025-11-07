@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -8,9 +8,60 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { IoAdd, IoRemove } from "react-icons/io5";
 import FtLogo from "../assets/img/ftlogo.svg";
 
 const Footer = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const sections = [
+    {
+      title: "Resume",
+      items: [
+        "AI Resume Builder",
+        "Resume Templates",
+        "Resume Examples",
+        "Resume Formats",
+        "ATS Resume Checker",
+        "How To Make A Resume",
+        "AI Resume Summary Generator",
+        "AI Resume Skills Generator",
+        "AI Resume Review",
+      ],
+    },
+    {
+      title: "Resume Now",
+      items: [
+        "About Us",
+        "Customer Reviews",
+        "Editorial Guidelines",
+        "Privacy Policy",
+        "Terms Of Service",
+        "Cookies & Tracking Policy",
+        "Sitemap",
+      ],
+    },
+    {
+      title: "Support",
+      items: [
+        "Contact",
+        "Pricing",
+        "FAQ",
+        "Accessibility",
+        "Affiliates",
+        "Press Coverage",
+      ],
+    },
+    {
+      title: "Customer Service",
+      custom: true,
+    },
+  ];
+
   return (
     <footer className="relative bg-[#122e50] text-white pt-16 pb-8 px-6 sm:px-10 lg:px-20 overflow-hidden">
       {/* Background Glows */}
@@ -44,110 +95,61 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Links */}
-      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-12 pb-8 text-center md:text-left">
-        {/* Resume */}
-        <div>
-          <h3 className="font-semibold text-lg mb-4 text-white">Resume</h3>
-          <ul className="space-y-4 text-gray-200 text-sm">
-            {[
-              "AI Resume Builder",
-              "Resume Templates",
-              "Resume Examples",
-              "Resume Formats",
-              "ATS Resume Checker",
-              "How To Make A Resume",
-              "AI Resume Summary Generator",
-              "AI Resume Skills Generator",
-              "AI Resume Review",
-            ].map((item, idx) => (
-              <li key={idx}>
-                <a
-                  href="#"
-                  className="hover:text-indigo-300 transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      {/* Footer Links (Accordion on Mobile) */}
+      <div className="relative grid grid-cols-1 lg:grid-cols-4 gap-10 pt-12 pb-8 text-left">
+        {sections.map((section, index) => (
+          <div key={index} className="border-b border-indigo-500/20 lg:border-none pb-4 lg:pb-0">
+            {/* Accordion Header */}
+            <button
+              onClick={() => toggleAccordion(index)}
+              className="w-full flex justify-between items-center lg:cursor-default"
+            >
+              <h3 className="font-semibold text-lg text-white">{section.title}</h3>
+              <span className="lg:hidden text-2xl">
+                {openIndex === index ? <IoRemove /> : <IoAdd />}
+              </span>
+            </button>
 
-        {/* Resume Now */}
-        <div>
-          <h3 className="font-semibold text-lg mb-4 text-white">
-            Resume Now
-          </h3>
-          <ul className="space-y-4 text-gray-200 text-sm">
-            {[
-              "About Us",
-              "Customer Reviews",
-              "Editorial Guidelines",
-              "Privacy Policy",
-              "Terms Of Service",
-              "Cookies & Tracking Policy",
-              "Sitemap",
-            ].map((item, idx) => (
-              <li key={idx}>
-                <a
-                  href="#"
-                  className="hover:text-indigo-300 transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Support */}
-        <div>
-          <h3 className="font-semibold text-lg mb-4 text-white">
-            Support
-          </h3>
-          <ul className="space-y-4 text-gray-200 text-sm">
-            {[
-              "Contact",
-              "Pricing",
-              "FAQ",
-              "Accessibility",
-              "Affiliates",
-              "Press Coverage",
-            ].map((item, idx) => (
-              <li key={idx}>
-                <a
-                  href="#"
-                  className="hover:text-indigo-300 transition-colors duration-200"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Customer Service */}
-        <div>
-          <h3 className="font-semibold text-lg mb-4 text-white">
-            Customer Service
-          </h3>
-          <ul className="space-y-3 text-gray-200 text-sm">
-            <li className="flex items-center gap-2 justify-center md:justify-start">
-              <FaPhoneAlt className="text-indigo-300" /> 844-351-7484
-            </li>
-            <li className="flex items-center gap-2 justify-center md:justify-start">
-              <FaEnvelope className="text-indigo-300" /> customerservice@resume-now.com
-            </li>
-            <li>
-              <strong className="mt-12 block">CS Support Schedule:</strong>
-              <ul className="mt-4 space-y-5 text-gray-300 text-xs">
-                <li>Mon – Fri 8:00 AM – 8:00 PM CST</li>
-                <li>Sat 8:00 AM – 5:00 PM CST</li>
-                <li>Sun 10:00 AM – 6:00 PM CST</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+            {/* Accordion Content */}
+            <div
+              className={`overflow-hidden transition-all duration-300 lg:max-h-none ${
+                openIndex === index ? "max-h-[600px] mt-4" : "max-h-0 lg:max-h-none"
+              }`}
+            >
+              {!section.custom ? (
+                <ul className="space-y-4 text-gray-200 text-sm mt-2 lg:mt-4">
+                  {section.items.map((item, idx) => (
+                    <li key={idx}>
+                      <a
+                        href="#"
+                        className="hover:text-indigo-300 transition-colors duration-200"
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <ul className="space-y-3 text-gray-200 text-sm mt-4">
+                  <li className="flex items-center gap-2">
+                    <FaPhoneAlt className="text-indigo-300" /> 844-351-7484
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <FaEnvelope className="text-indigo-300" /> customerservice@resume-now.com
+                  </li>
+                  <li>
+                    <strong className="mt-6 block">CS Support Schedule:</strong>
+                    <ul className="mt-4 space-y-5 text-gray-300 text-xs">
+                      <li>Mon – Fri 8:00 AM – 8:00 PM CST</li>
+                      <li>Sat 8:00 AM – 5:00 PM CST</li>
+                      <li>Sun 10:00 AM – 6:00 PM CST</li>
+                    </ul>
+                  </li>
+                </ul>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Bottom */}

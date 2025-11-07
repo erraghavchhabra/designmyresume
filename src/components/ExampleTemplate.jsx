@@ -32,7 +32,7 @@ export const ExampleTemplate = () => {
     <div className="max-w-7xl w-full mx-auto px-6 py-12 sm:py-16 lg:py-20">
       {/* Header Section */}
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <h2 className="mb-6 text-3xl font-bold leading-none tracking-tight text-indigo-600 sm:text-4xl">
+        <h2 className="mb-6 text-3xl font-bold leading-none  text-indigo-600 sm:text-4xl">
         Find Inspiration in Real-World Examples
         </h2>
         <p className="text-lg text-gray-700">

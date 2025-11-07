@@ -22,9 +22,9 @@ export default function VideoSec() {
           </div>
 
 
-          <div className="p-14 flex items-center justify-center mt-8 lg:mt-0 lg:basis-3/6 relative bg-indigo-600 lg:rounded-r-2xl ">
+          <div className="p-6 lg:p-14 flex items-center justify-center mt-8 lg:mt-0 lg:basis-3/6 relative bg-indigo-600 lg:rounded-r-2xl ">
           <div>
-             <h1 className="text-4xl sm:text-4xl lg:text-5xl lg:mb-4 text-white font-bold leading-tight">
+             <h1 className="text-3xl sm:text-4xl lg:text-5xl lg:mb-4 text-white font-bold leading-tight">
            A New Resume Fast
           </h1>
           <p className="text-white lg:text-2xl">Creating a mistake-free resume with Resume Now’s AI Resume Builder is not only fast, but easy to do!</p>

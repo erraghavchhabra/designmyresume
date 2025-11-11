@@ -1,10 +1,134 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* 🟣 Indigo Primary Theme */
+    --primary: 244 83% 57%; /* #4f46e5 */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 244 83% 50%;
+
+    --secondary: 220 20% 95%;
+    --secondary-foreground: 215 25% 15%;
+
+    --accent: 258 90% 65%; /* violet-indigo mix */
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 258 90% 60%;
+
+    --muted: 220 20% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 244 83% 57%;
+
+    --radius: 0.75rem;
+
+    /* Gradients + Shadows (Indigo toned) */
+    --gradient-primary: linear-gradient(135deg, hsl(244 83% 57%), hsl(256 80% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(258 90% 65%), hsl(280 85% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(244 83% 57%) 0%, hsl(256 80% 60%) 50%, hsl(258 90% 65%) 100%);
+
+    --shadow-sm: 0 2px 8px -2px hsl(244 40% 30% / 0.08);
+    --shadow-md: 0 8px 24px -6px hsl(244 40% 30% / 0.12);
+    --shadow-lg: 0 20px 40px -12px hsl(244 40% 30% / 0.18);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 230 35% 8%;
+    --foreground: 220 20% 98%;
+
+    --card: 230 25% 12%;
+    --card-foreground: 220 20% 98%;
+
+    --popover: 230 25% 12%;
+    --popover-foreground: 220 20% 98%;
+
+    /* Dark Indigo Variant */
+    --primary: 244 83% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 244 83% 55%;
+
+    --secondary: 230 25% 15%;
+    --secondary-foreground: 220 20% 98%;
+
+    --accent: 258 90% 70%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 258 90% 65%;
+
+    --muted: 230 25% 15%;
+    --muted-foreground: 220 15% 65%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 25% 20%;
+    --input: 230 25% 20%;
+    --ring: 244 83% 60%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(244 83% 60%), hsl(256 80% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(258 90% 70%), hsl(280 85% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(244 83% 60%) 0%, hsl(256 80% 70%) 50%, hsl(258 90% 70%) 100%);
+
+    --shadow-sm: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 8px 24px -6px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 20px 40px -12px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20;
+  }
+
+  .shadow-smooth {
+    box-shadow: var(--shadow-md);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rufina:wght@400;700&display=swap");
+
 body {
   margin: 0;
   font-family: "Red Hat Display", sans-serif;

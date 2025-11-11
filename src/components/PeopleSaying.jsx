@@ -1,20 +1,21 @@
 // PeopleSaying.jsx
 import React from "react";
-
+import image1 from "../assets/img/user1.png";
+import image2 from "../assets/img/user2.png";
 const testimonials = [
   {
     name: "Sarah Johnson",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    image: image2,
     text: "This service completely exceeded my expectations! The experience was seamless and delightful from start to finish.",
   },
   {
     name: "James Carter",
-    image: "https://randomuser.me/api/portraits/men/43.jpg",
+    image: image1,
     text: "Absolutely phenomenal! I’ve never encountered such professionalism and quality before. Highly recommended.",
   },
   {
     name: "Emily Davis",
-    image: "https://randomuser.me/api/portraits/women/22.jpg",
+    image: image2,
     text: "I’m genuinely impressed. The attention to detail and customer care really made me feel valued. I’ll definitely return!",
   },
 ];
@@ -24,8 +25,9 @@ const PeopleSaying = () => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="mb-10 text-3xl font-bold leading-none tracking-tight text-indigo-600 sm:text-4xl">
-         What People Are Saying About Our Resume Maker
+          What People Are Saying About Our Resume Maker
         </h2>
+
         <div className="grid gap-8 md:grid-cols-3">
           {testimonials.map((person, index) => (
             <div

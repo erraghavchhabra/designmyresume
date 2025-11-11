@@ -14,9 +14,13 @@ import CTAResumeCounter from "../components/CTAResumeCounter";
 import BlogSection from "../components/BlogSection";
 import FAQSection from "../components/FAQSection";
 import FooterCTA from "../components/FooterCTA";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
+      <Navbar />
+
       <Hero />
       <GenerateBullet />
       <div className="tab-sec relative">
@@ -26,7 +30,10 @@ export default function Home() {
       <TestimonialSlider />
       <CalltoAction />
       <ChooseTemplate />
-      <div className="bg-cover ms-feature relative bg-fixed bg-top bg-no-repeat" style={{ backgroundImage: `url(${BuilderBg})` }}>
+      <div
+        className="bg-cover ms-feature relative bg-fixed bg-top bg-no-repeat"
+        style={{ backgroundImage: `url(${BuilderBg})` }}
+      >
         <Features />
       </div>
       <PeopleSaying />
@@ -35,6 +42,7 @@ export default function Home() {
       <BlogSection />
       <FAQSection />
       <FooterCTA />
+      <Footer />
     </>
   );
 }
